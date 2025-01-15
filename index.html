@@ -1,0 +1,163 @@
+<!DOCTYPE html> 
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl's Beauty</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1c1c1c, #3e2c26, #c8a165);
+            background-size: 400% 400%;
+            animation: gradientAnimation 8s ease infinite;
+            color: #c8a165;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+        }
+
+        header img {
+            width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Уменьшенная тень */
+        }
+
+        header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4em;
+            margin: 0;
+            color: #c8a165;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .services h2 {
+            font-size: 2.5em;
+            color: #c8a165;
+            margin-bottom: 30px;
+        }
+
+        .services .service-item {
+            display: inline-block;
+            width: 45%;
+            margin: 10px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.3); /* Более прозрачный фон */
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .services .service-item:hover {
+            background-color: rgba(0, 0, 0, 0.5); /* Чуть менее прозрачный при наведении */
+            transform: scale(1.05);
+        }
+
+        .services .service-item img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            filter: brightness(85%);
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+
+        .services .service-item img:hover {
+            filter: brightness(100%);
+            transform: scale(1.05);
+        }
+
+        .services .service-item h3 {
+            font-size: 1.8em;
+            margin: 15px 0;
+            color: #c8a165;
+        }
+
+        .services .service-item p {
+            color: #c8a165;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #c8a165;
+        }
+
+        footer a {
+            color: #c8a165;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .address, .contact {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="https://imgur.com/XJzMgwL.jpg" alt="Girl's Beauty Logo">
+    <h1>Girl's Beauty</h1>
+</header>
+
+<div class="container">
+    <div class="services">
+        <h2>Nasze Usługi</h2>
+        <div class="service-item" onclick="location.href='manicure.html';">
+            <img src="https://i.imgur.com/SSQfv12.jpeg" alt="Manicure">
+            <h3>Manicure</h3>
+            <p>Zobacz usługi manicure</p>
+        </div>
+        <div class="service-item" onclick="location.href='pedicure.html';">
+            <img src="https://i.imgur.com/wqJsK8V.jpeg" alt="Pedicure">
+            <h3>Pedicure</h3>
+            <p>Zobacz usługi pedicure</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Girl's Beauty. Wszystkie prawa zastrzeżone.</p>
+    <div>
+        <a href="https://www.instagram.com/kravchenko_nails.kr?igsh=c3p3cXk2emg3dWV5" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    </div>
+    <div class="address">
+        Adres: Piłsudskiego 11, Stryków
+    </div>
+    <div class="contact">
+        Telefon: +48 516 669 452
+    </div>
+</footer>
+
+</body>
+</html>
